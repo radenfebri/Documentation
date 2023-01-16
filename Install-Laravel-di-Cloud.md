@@ -50,13 +50,16 @@ Untuk sekema folder berikut ini yakni bersifat opsional, kalian bisa taruh di ba
 ├───📂 laravel
 │     ├── 📄 docker-compose.yaml
 │     ├── 📂 nginx
-│     │    └──📄  default.conf
+│     │    └──📄 default.conf
 │     ├───📂 mysql
 │     └───📂 src
-│           └──📄...
+│          └──📄 ...
 ```
 
-
+Berkut langkah-langkah membuat folder dan file nya:
+```
+sudo apt update
+```
 
 Markdown is a lightweight markup language based on the formatting conventions
 that people naturally use in email.
