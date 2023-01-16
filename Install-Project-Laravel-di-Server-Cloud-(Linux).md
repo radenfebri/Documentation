@@ -6,7 +6,7 @@
 [![N|Solid](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)](#)
 
 ## Video Tutorial Lengkap di Channel Yutube Raden Febri
-[![N|Solid](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/@RadenFebri)
+[![N|Solid](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://laravel.com/)
 
 Pada tutorial ini saya melakukan installasi laravel di Cloud dan penerapan menggunakan Docker Container sebagai Pondasinya. Berikut adalah langkah-langkah installasinya:
 - [Install PHP & Package PHP](https://github.com/radenfebri/Documentation/blob/master/Install-Project-Laravel-di-Server-Cloud-(Linux).md#installation-php--package-php)
@@ -213,6 +213,11 @@ Tuajuannya agar file berikut ini bisa diakses oleh public
 chmod 777 -R /home/radenfebri/laravel/src/storage
 chmod 777 -R /home/radenfebri/laravel/src/public
 ```
+## Mencoba Migrate data ke Database
 
+Lakukan perintah migrate untuk mencoba mengirimkan data ke dalam database yang sudah kita buat sebelumnya dnegan menggunakan Docker Container. masuk ke direktori /home/radenfebri/laravel/
+```
+docker-compose exec php php /home/radenfebri/laravel/artisan migrate
+```
 > Catatan: `Apabila pada documentasi ini ada kesalahan, silahkan bantu untuk membenarkan kalian bisa langsung melakukan pull request` Saya ucapkan Terimakasih.
 
