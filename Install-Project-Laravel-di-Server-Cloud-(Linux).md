@@ -6,7 +6,7 @@
 [![N|Solid](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)](#)
 
 ## Video Tutorial Lengkap di Channel Yutube Raden Febri
-[![N|Solid](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://laravel.com/)
+[![N|Solid](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/@RadenFebri)
 
 Pada tutorial ini saya melakukan installasi laravel di Cloud dan penerapan menggunakan Docker Container sebagai Pondasinya. Berikut adalah langkah-langkah installasinya:
 - [Install PHP & Package PHP](https://github.com/radenfebri/Documentation/blob/master/Install-Project-Laravel-di-Server-Cloud-(Linux).md#installation-php--package-php)
