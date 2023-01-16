@@ -45,34 +45,18 @@ sudo apt update
 ## Membuat Folder Seperti Sekema Berikut
 Untuk sekema folder berikut ini yakni bersifat opsional, kalian bisa taruh di bagian mana saja.
 
-```
-🏠 /home/radenfebri/
-└─── laravel
-│   │   docker-compose.yaml
-│   └─── nginx
-│       │   default.conf
-│   └─── mysql
-│   └─── src
-│       │   ...
-```
 
-+-- _config.yml
-+-- _drafts
-|   +-- begin-with-the-crazy-ideas.textile
-|   +-- on-simplicity-in-technology.markdown
-+-- _includes
-|   +-- footer.html
-|   +-- header.html
-+-- _layouts
-|   +-- default.html
-|   +-- post.html
-+-- _posts
-|   +-- 2007-10-29-why-every-programmer-should-play-nethack.textile
-|   +-- 2009-04-26-barcamp-boston-4-roundup.textile
-+-- _data
-|   +-- members.yml
-+-- _site
-+-- index.html
+🏠 /home/radenfebri/
+└───  📂 laravel
+│       │  📄 docker-compose.yaml
+│   └─── 📂 nginx
+│       │  📄  default.conf
+│   └─── 📂 mysql
+│   └─── 📂 src
+│       │   ...
+
+
+
 
 Markdown is a lightweight markup language based on the formatting conventions
 that people naturally use in email.
