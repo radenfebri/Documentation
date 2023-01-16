@@ -1,24 +1,60 @@
-# Dillinger
-## _The Last Markdown Editor, Ever_
+# Install Project Laravel di Server Cloud (Linux)
 
-[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+[![N|Solid](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)](https://laravel.com/)
 
-Dillinger is a cloud-enabled, mobile-ready, offline-storage compatible,
-AngularJS-powered HTML5 Markdown editor.
+[![N|Solid](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)](#)
 
-- Type some Markdown on the left
-- See HTML in the right
-- ✨Magic ✨
+## Video Tutorial Lengkap di Channel Yutube Raden Febri
+[![N|Solid](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://laravel.com/)
 
-## Features
+Pada tutorial ini saya melakukan installasi laravel di Cloud dan penerapan menggunakan Docker Container sebagai Pondasinya. Berikut adalah langkah-langkah installasinya:
+- Install PHP & Package PHP
+- Install Composer
+- Membuat Direktori
+- 
 
-- Import a HTML file and watch it magically convert to Markdown
-- Drag and drop images (requires your Dropbox account be linked)
-- Import and save files from GitHub, Dropbox, Google Drive and One Drive
-- Drag and drop markdown and HTML files into Dillinger
-- Export documents as Markdown, HTML and PDF
+## Installation PHP & Package PHP
+
+Cara menginstall PHP dan Package yang dibutuhkan.
+Kalian bisa lihat versi PHP yang terbaru melalui link berikut [php.net](https://www.php.net/releases/8.2/en.php).
+
+
+```sh
+sudo apt-get install curl php-cli php-mbstring git unzip
+```
+
+```sh
+sudo apt install php8.1-common php8.1-mysql php8.1-xml php8.1-xmlrpc php8.1-curl php8.1-gd php8.1-imagick php8.1-cli php8.1-dev php8.1-imap php8.1-mbstring php8.1-opcache php8.1-soap php8.1-zip php8.1-redis php8.1-intl -y
+```
+
+## Install Composer
+Cara menginstall Composer untuk kebutuhan intall framework Laravel.
+Untuk lebih lanjut kalian bisa lihat website [getcomposer.org](https://getcomposer.org/).
+
+```sh
+sudo curl –sS https://getcomposer.org/installer | php
+```
+```sh
+sudo mv composer.phar /usr/local/bin/composer
+```
+```sh
+sudo apt update
+```
+
+## Membuat Folder Seperti Sekema Berikut
+Untuk sekema folder berikut ini yakni bersifat opsional, kalian bisa taruh di bagian mana saja.
+
+```
+🏠 /home/radenfebri/
+└─── laravel
+│   │   docker-compose.yaml
+│   └─── nginx
+│       │   default.conf
+│   └─── mysql
+│   └─── src
+│       │   ...
+```
 
 Markdown is a lightweight markup language based on the formatting conventions
 that people naturally use in email.
