@@ -47,12 +47,12 @@ Untuk sekema folder berikut ini yakni bersifat opsional, kalian bisa taruh di ba
 
 ```
 🏠 /home/radenfebri/
-├──  📂 laravel
-│     ├──  📄 docker-compose.yaml
-│     └─── 📂  nginx
-│     │     └──📄  default.conf
-│     ├──  📂 mysql
-│     └─── 📂 src
+├───📂 laravel
+│     ├── 📄 docker-compose.yaml
+│     ├── 📂 nginx
+│     │    └──📄  default.conf
+│     ├───📂 mysql
+│     └───📂 src
 │           └──📄...
 ```
 
