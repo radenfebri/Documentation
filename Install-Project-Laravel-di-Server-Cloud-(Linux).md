@@ -18,6 +18,7 @@ Pada tutorial ini saya melakukan installasi laravel di Cloud dan penerapan mengg
 - [Membuat Website dari Framework Laravel](https://github.com/radenfebri/Documentation/blob/master/Install-Project-Laravel-di-Server-Cloud-(Linux).md#membuat-website-dari-framework-laravel)
 - [Menjalankan File docker-compose.yaml](https://github.com/radenfebri/Documentation/blob/master/Install-Project-Laravel-di-Server-Cloud-(Linux).md#menjalankan-file-docker-composeyaml)
 - [Memberiakan Hak akses](https://github.com/radenfebri/Documentation/blob/master/Install-Project-Laravel-di-Server-Cloud-(Linux).md#memberiakan-hak-akses-kedalam-direktori)
+- [Coba untuk Migrate Data](https://github.com/radenfebri/Documentation/blob/master/Install-Project-Laravel-di-Server-Cloud-(Linux).md#mencoba-migrate-data-ke-database)
 
 ## Installation PHP & Package PHP
 
