@@ -45,16 +45,16 @@ sudo apt update
 ## Membuat Folder Seperti Sekema Berikut
 Untuk sekema folder berikut ini yakni bersifat opsional, kalian bisa taruh di bagian mana saja.
 
-
+```
 🏠 /home/radenfebri/
-└───  📂 laravel
-│       │  📄 docker-compose.yaml
-│   └─── 📂 nginx
-│       │  📄  default.conf
-│   └─── 📂 mysql
-│   └─── 📂 src
-│       │   ...
-
+├──  📂 laravel
+│     ├──  📄 docker-compose.yaml
+│     └─── 📂  nginx
+│     │     └──📄  default.conf
+│     ├──  📂 mysql
+│     └─── 📂 src
+│           └──📄...
+```
 
 
 
