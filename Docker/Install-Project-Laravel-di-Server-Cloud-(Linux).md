@@ -9,16 +9,7 @@
 [![N|Solid](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://laravel.com/)
 
 Pada tutorial ini saya melakukan installasi laravel di Cloud dan penerapan menggunakan Docker Container sebagai Pondasinya. Berikut adalah langkah-langkah installasinya:
-- [Install PHP & Package PHP](https://github.com/radenfebri/Documentation/blob/master/Docker/Install-Project-Laravel-di-Server-Cloud-(Linux).md#installation-php--package-php)
-- [Install Composer](https://github.com/radenfebri/Documentation/blob/master/Docker/Install-Project-Laravel-di-Server-Cloud-(Linux).md#install-composer)
-- [Membuat Folder](https://github.com/radenfebri/Documentation/blob/master/Docker/Install-Project-Laravel-di-Server-Cloud-(Linux).md#membuat-folder-seperti-sekema-berikut)
-- [Membuat File (docker-compose.yaml)](https://github.com/radenfebri/Documentation/blob/master/Docker/Install-Project-Laravel-di-Server-Cloud-(Linux).md#membuat-file-dalam-folder-laravel-docker-composeyaml)
-- [Membuat File (Dockerfile)](https://github.com/radenfebri/Documentation/blob/master/Docker/Install-Project-Laravel-di-Server-Cloud-(Linux).md#membuat-file-dalam-folder-laravel-dockerfile)
-- [Membuat File (default.conf)](https://github.com/radenfebri/Documentation/blob/master/Docker/Install-Project-Laravel-di-Server-Cloud-(Linux).md#membuat-file-dalam-folder-nginx-defaultconf)
-- [Membuat Website dari Framework Laravel](https://github.com/radenfebri/Documentation/blob/master/Docker/Install-Project-Laravel-di-Server-Cloud-(Linux).md#membuat-website-dari-framework-laravel)
-- [Menjalankan File docker-compose.yaml](https://github.com/radenfebri/Documentation/blob/master/Docker/Install-Project-Laravel-di-Server-Cloud-(Linux).md#menjalankan-file-docker-composeyaml)
-- [Memberiakan Hak akses](https://github.com/radenfebri/Documentation/blob/master/Docker/Install-Project-Laravel-di-Server-Cloud-(Linux).md#memberiakan-hak-akses-kedalam-direktori)
-- [Coba untuk Migrate Data](https://github.com/radenfebri/Documentation/blob/master/Docker/Install-Project-Laravel-di-Server-Cloud-(Linux).md#mencoba-migrate-data-ke-database)
+
 
 ## Installation PHP & Package PHP
 
