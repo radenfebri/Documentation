@@ -197,7 +197,7 @@ composer create-project --prefer-dist laravel/laravel src
 ## Menjalankan File docker-compose.yaml
 Berikut cara menjalankan file docker-compose.yaml & pastikan sekarang sudah berada di dalam direktori (/home/radenfebri/laravel)
 ```
-docker compose-up -d
+docker-compose up -d
 ```
 ## Memberiakan Hak akses kedalam DIrektori
 Tuajuannya agar file berikut ini bisa diakses oleh public
