@@ -129,6 +129,7 @@ services:
       - laravel
 
   phpmyadmin:
+    container_name: phpmyadmin
     image: phpmyadmin
     restart: always
     ports:
