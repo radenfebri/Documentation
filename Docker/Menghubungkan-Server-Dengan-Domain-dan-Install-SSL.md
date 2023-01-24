@@ -21,10 +21,10 @@ Langkah Pertama salin terlebih dahulu ip public dan kemudian buka pada bagian do
 ![image](https://user-images.githubusercontent.com/56567941/214229893-c2248c87-4506-4f0d-a123-c9f86caa7358.png)
 
 Jadi Penjelasannya begini kenapa kita menambahkan Records seperti diatas:
-> Type = A yang berarti Menghubungkan Domain ke alamat IP.
-> Name = @ yang berarti Menunjukkan bahwa IP atau Hostname Server.
-> Value = IP Server yang berarti Domain akan dihubungkan dengan Server yang sudah ada tersebut melalui IP Public.
-> TTL = 3600 TTL yang berarti (Time to Live) nilai yang ditentukan dalam sebuah record DNS yang menunjukkan berapa lama record tersebut dipertahankan dalam cache oleh resolver DNS. Nilai TTL ditentukan dalam hitungan detik. Jika sebuah record memiliki TTL 3600, itu berarti bahwa resolver DNS yang menyimpan record tersebut harus menyimpannya selama 3600 detik (atau 1 jam) sebelum mengambil data baru dari server DNS utama.
+* Type = A yang berarti Menghubungkan Domain ke alamat IP.
+* Name = @ yang berarti Menunjukkan bahwa IP atau Hostname Server.
+* Value = IP Server yang berarti Domain akan dihubungkan dengan Server yang sudah ada tersebut melalui IP Public.
+* TTL = 3600 TTL yang berarti (Time to Live) nilai yang ditentukan dalam sebuah record DNS yang menunjukkan berapa lama record tersebut dipertahankan dalam cache oleh resolver DNS. Nilai TTL ditentukan dalam hitungan detik. Jika sebuah record memiliki TTL 3600, itu berarti bahwa resolver DNS yang menyimpan record tersebut harus menyimpannya selama 3600 detik (atau 1 jam) sebelum mengambil data baru dari server DNS utama.
 
 
 
