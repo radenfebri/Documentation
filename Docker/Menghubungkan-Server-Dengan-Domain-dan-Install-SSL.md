@@ -1,9 +1,5 @@
 # Menghubungkan Server dengan Domain dan Install SSL pada Docker
 
-
-[![N|Solid](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)](https://laravel.com/)
-
-
 ## Video Tutorial Lengkap di Channel Yutube Raden Febri
 [![N|Solid](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/@RadenFebri)
 
