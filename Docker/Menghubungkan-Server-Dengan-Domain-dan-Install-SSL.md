@@ -45,11 +45,13 @@ Untuk sekema folder berikut ini yakni bersifat opsional, kalian bisa taruh di ba
 │    ├── 📂 nginx
 │    │    └──📄 default.conf
 │    ├───📂 mysql
-│    └───📂 src
+│    ├───📂 src
+│    │    └──📄 ...
+│    └───📂 cert
 │         └──📄 ...
 ```
 
-Berkut langkah-langkah membuat folder dan file nya:
+Berkut langkah-langkah membuat folder cert:
 masuk sebagau super user / root
 ```
 sudo su
@@ -58,20 +60,21 @@ masuk kedalam direktori /home/radenfebri/
 ```
 cd /home/radenfebri
 ```
-membuat folder dengan nama laravel
+membuat folder dengan nama cert
 ```
-mkdir laravel
+mkdir cert
 ```
 masuk kedalam folder laravel yang sudah di buat
 ```
-cd laravel
+cd cert
 ```
-kemudian didalam folder laravel (/home/radenfebri/laravel/) buatlah folder seperti di bawah ini:
+kemudian didalam folder cert (/home/radenfebri/laravel/cert) kita buat certificate dengan perintah seperti di bawah ini:
 ```
-mkdir nginx
-mkdir mysql
-mkdir src
+sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout localhost.key -out localhost.crt
 ```
+untuk penamaan certificate .key dan .crt tidak harus menggunakan localhost, dan kalian bisa sesuaikan sendiri
+
+
 ## Membuat File dalam Folder laravel (docker-compose.yaml)
 Perintah di bawah ini yakni membuat file sekaligus edit file yang baru dibuat
 ```
@@ -88,15 +91,17 @@ networks:
 services:
   nginx:
     container_name: nginx
-    image: nginx:alpine
+    image: nginx
     ports:
       - "80:80"
+      - "443:443"
     volumes:
-      - ./src:/home/ubuntu/laravel
+      - ./src:/home/radenfebri/laravel
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+      - ./cert/:/etc/nginx/conf.d
     networks:
       - laravel
-      
+
   php:
     container_name: php
     build:
@@ -105,10 +110,10 @@ services:
     ports:
       - "9000:9000"
     volumes:
-      - ./src:/home/ubuntu/laravel
+      - ./src:/home/radenfebri/laravel
     networks:
       - laravel
-      
+
   mysql:
     container_name: mysql
     image: mysql:5.7
@@ -163,8 +168,34 @@ Kemudian isikan kode berikut ini dalam file default.conf
 server {
     listen 80;
     index index.php index.html;
-    server_name localhost;
+    server_name youtube-radenfebri.my.id;
     root /home/radenfebri/laravel/public;
+
+    location / {
+        try_files $uri $uri/ /index.php?$query_string;
+    }
+
+    location ~ \.php$ {
+        try_files $uri =404;
+        fastcgi_pass php:9000;
+        fastcgi_index index.php;
+        include fastcgi_params;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+    }
+}
+
+
+server {
+    listen 443 ssl http2;
+    listen [::]:443 ssl http2;
+    index index.php index.html;
+    server_name youtube-radenfebri.my.id;
+    root /home/radenfebri/laravel/public;
+
+    ssl_certificate /etc/nginx/conf.d/rfcrt.crt;
+    ssl_certificate_key /etc/nginx/conf.d/rfkey.key;
+
+    ssl_protocols TLSV1.2 TLSv1.1 TLSV1;
 
     location / {
         try_files $uri $uri/ /index.php?$query_string;
