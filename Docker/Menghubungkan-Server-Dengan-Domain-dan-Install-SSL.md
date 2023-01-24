@@ -238,5 +238,9 @@ Lakukan perintah migrate untuk mencoba mengirimkan data ke dalam database yang s
 ```
 docker-compose exec php php /home/radenfebri/laravel/artisan migrate
 ```
+
+Berikut adalah tampilan Website yang sudah terhubung dengan domain dan sekaligu sudah terinstall SSL
+![image](https://user-images.githubusercontent.com/56567941/214234363-06cd3846-e12d-4146-af9a-365498f9a5b7.png)
+
 > Catatan: `Apabila pada documentasi ini ada kesalahan, silahkan bantu untuk membenarkan kalian bisa langsung melakukan pull request` Saya ucapkan Terimakasih.
 
