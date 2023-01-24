@@ -26,6 +26,12 @@ Jadi Penjelasannya begini kenapa kita menambahkan Records seperti diatas:
 * Value = IP Server yang berarti Domain akan dihubungkan dengan Server yang sudah ada tersebut melalui IP Public.
 * TTL = 3600 TTL yang berarti (Time to Live) nilai yang ditentukan dalam sebuah record DNS yang menunjukkan berapa lama record tersebut dipertahankan dalam cache oleh resolver DNS. Nilai TTL ditentukan dalam hitungan detik. Jika sebuah record memiliki TTL 3600, itu berarti bahwa resolver DNS yang menyimpan record tersebut harus menyimpannya selama 3600 detik (atau 1 jam) sebelum mengambil data baru dari server DNS utama.
 
+Langkah Kedua kalian bisa cek menggunakan website [dnschecker.org](https://dnschecker.org/), kalian bisa cek dengan memilih opsi A Record.
+![image](https://user-images.githubusercontent.com/56567941/214231750-d77ddef7-a5fa-4acd-a476-0dd982600b4e.png)
+
+Gambar diatas menggambarkan bahwasannya Domain dengan Server kita sudah tehubung, dan proses propagasi ini membutuhkan kurang lebih 1x24 jam.
+
+
 
 
 ## Membuat Folder Seperti Sekema Berikut
