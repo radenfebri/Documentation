@@ -192,8 +192,8 @@ server {
     server_name youtube-radenfebri.my.id;
     root /home/radenfebri/laravel/public;
 
-    ssl_certificate /etc/nginx/conf.d/rfcrt.crt;
-    ssl_certificate_key /etc/nginx/conf.d/rfkey.key;
+    ssl_certificate /etc/nginx/conf.d/localhost.crt;
+    ssl_certificate_key /etc/nginx/conf.d/localhost.key;
 
     ssl_protocols TLSV1.2 TLSv1.1 TLSV1;
 
