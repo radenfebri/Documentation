@@ -8,24 +8,25 @@ Pada tutorial ini saya memberikan tutorial cara menghubungkan Cloud Server denga
 
 ## Konfigurasi Server dan DNS Record
 
-Sebelumnya kalian harus memiliki Cloud Server dan sekaligus alamat IP Pulic untuk dihubungkan dengan Domain yang sudah dan jangan lupa beli Domain terlebih dahulu ya. Berikut preview IP Public dan Domain yang sudah saya miliki:
+Sebelumnya kalian harus memiliki Cloud Server dan sekaligus alamat IP Pulic untuk dihubungkan dengan Domain yang sudah dan jangan lupa beli Domain terlebih dahulu ya. Berikut preview IP Public dan Domain yang sudah saya miliki.
 
+Contoh IP Public / Server:
 ![image](https://user-images.githubusercontent.com/56567941/214229148-8974f737-fe0c-4f9e-a1b2-7c672df271a7.png)
 
+Contoh Domain:
+![image](https://user-images.githubusercontent.com/56567941/214229435-aa5bf96b-5d72-44da-a9f8-baf0da154983.png)
 
-## Install Composer
-Cara menginstall Composer untuk kebutuhan intall framework Laravel.
-Untuk lebih lanjut kalian bisa lihat website [getcomposer.org](https://getcomposer.org/).
 
-```
-sudo curl –sS https://getcomposer.org/installer | php
-```
-```
-sudo mv composer.phar /usr/local/bin/composer
-```
-```
-sudo apt update
-```
+Langkah Pertama salin terlebih dahulu ip public dan kemudian buka pada bagian domain Records kemudian kalian bisa tambahahkan seperti gambar di bawah ini:
+![image](https://user-images.githubusercontent.com/56567941/214229893-c2248c87-4506-4f0d-a123-c9f86caa7358.png)
+
+Jadi Penjelasannya begini kenapa kita menambahkan Records seperti diatas:
+Type = A yang berarti Menghubungkan Domain ke alamat IP.
+Name = @ yang berarti Menunjukkan bahwa IP atau Hostname Server.
+Value = IP Server yang berarti Domain akan dihubungkan dengan Server yang sudah ada tersebut melalui IP Public.
+TTL = 3600 TTL yang berarti (Time to Live) nilai yang ditentukan dalam sebuah record DNS yang menunjukkan berapa lama record tersebut dipertahankan dalam cache oleh resolver DNS. Nilai TTL ditentukan dalam hitungan detik. Jika sebuah record memiliki TTL 3600, itu berarti bahwa resolver DNS yang menyimpan record tersebut harus menyimpannya selama 3600 detik (atau 1 jam) sebelum mengambil data baru dari server DNS utama.
+
+
 
 ## Membuat Folder Seperti Sekema Berikut
 Untuk sekema folder berikut ini yakni bersifat opsional, kalian bisa taruh di bagian mana saja.
