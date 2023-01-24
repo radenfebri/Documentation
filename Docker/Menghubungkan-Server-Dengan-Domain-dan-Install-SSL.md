@@ -3,22 +3,15 @@
 ## Video Tutorial Lengkap di Channel Yutube Raden Febri
 [![N|Solid](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/@RadenFebri)
 
-Pada tutorial ini saya melakukan installasi laravel di Cloud dan penerapan menggunakan Docker Container sebagai Pondasinya. Berikut adalah langkah-langkah installasinya:
+Pada tutorial ini saya memberikan tutorial cara menghubungkan Cloud Server dengan Domain yang kalian miliki dan juga saya memberikan tutorial cara untuk install SSL dengan mudah, penerapan dengan Docker COntainer. Berikut adalah langkah-langkah installasinya:
 
 
-## Installation PHP & Package PHP
+## Konfigurasi Server dan DNS Record
 
-Cara menginstall PHP dan Package yang dibutuhkan.
-Kalian bisa lihat versi PHP yang terbaru melalui link berikut [php.net](https://www.php.net/releases/8.2/en.php).
+Sebelumnya kalian harus memiliki Cloud Server dan sekaligus alamat IP Pulic untuk dihubungkan dengan Domain yang sudah dan jangan lupa beli Domain terlebih dahulu ya. Berikut preview IP Public dan Domain yang sudah saya miliki:
 
+![image](https://user-images.githubusercontent.com/56567941/214229148-8974f737-fe0c-4f9e-a1b2-7c672df271a7.png)
 
-```
-sudo apt-get install curl php-cli php-mbstring git unzip
-```
-
-```
-sudo apt install php8.1-common php8.1-mysql php8.1-xml php8.1-xmlrpc php8.1-curl php8.1-gd php8.1-imagick php8.1-cli php8.1-dev php8.1-imap php8.1-mbstring php8.1-opcache php8.1-soap php8.1-zip php8.1-redis php8.1-intl -y
-```
 
 ## Install Composer
 Cara menginstall Composer untuk kebutuhan intall framework Laravel.
